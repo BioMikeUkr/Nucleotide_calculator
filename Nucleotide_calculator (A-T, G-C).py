@@ -1,12 +1,25 @@
-x=input('The number of nucleotides:')
+#x=input('The number of nucleotides:')
 running = True
 A = 'A'
 T = 'T'
 C = 'C'
 G = 'G'
 STOP = 'STOP'
+STOP1 = 'STOP1'
 GetOppositeStrandOfDna = 'GetOppositeStrandOfDna'
-print("Type a nucleotide (A,T,G,C), STOP to stop the script or GetOppositeStrandOfDna to get the opposite strand Of DNA")
+#print("Type a nucleotide (A,T,G,C), STOP to stop the script or GetOppositeStrandOfDna to get the opposite strand Of DNA")
+print(('Type the seguense, every new nucleotide in the next string as (A,T,C,G), when stop type STOP1'))
+print(('start'))
+print((''))
+while running:
+    f = input('')
+    if f == STOP1:
+        running = False
+        print((''))
+        print(('end '))
+        print((''))
+        print('Copy and paste the sequence with start and the space in the end:')
+running = True
 while running:
     a = input('')
     if a == A:
@@ -17,15 +30,7 @@ while running:
         print(G)
     elif a == G:
         print(C)
-    elif a == GetOppositeStrandOfDna:
-        b = input('Copy and paste the sequence upper:')
-        result_str = ""
-        for i in range(1, len(b)):
-            if i != 2:
-                result_str = result_str + b[i]
-                print(result_str)
-
-
+    #elif a == GetOppositeStrandOfDna:
     elif a == STOP:
         running = False
         print('The proces has been stopped')
