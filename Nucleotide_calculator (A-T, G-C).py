@@ -18,13 +18,13 @@ while running:
     a = input('')
     if a == A:
         print(C)
-    elif a == T:
+    if a == T:
         print(A)
-    elif a == C:
+    if a == C:
         print(G)
-    elif a == G:
+    if a == G:
         print(C)
-    elif a == 'STOP':
+    if a == 'STOP':
         break
 print('The proces has been stopped')
 
