@@ -10,9 +10,6 @@ while running:
     f = input('')
     if f == 'STOP':
         break
-print((''))
-print(('end '))
-print((''))
 print('Copy and paste the sequence with start and the space in the end:')
 while running:
     a = input('')
