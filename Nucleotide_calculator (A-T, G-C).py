@@ -1,30 +1,18 @@
-running = True
-A = 'A'
-T = 'T'
-C = 'C'
-G = 'G'
-print(('Type the seguense, every new nucleotide in the next string as (A,T,C,G), when stop type STOP1'))
-print(('start'))
-print((''))
-while running:
-    f = input('')
-    if f == 'STOP':
-        break
-print('Copy and paste the sequence with start and the space in the end:')
-while running:
-    a = input('')
-    if a == A:
-        print(C)
-    if a == T:
-        print(A)
-    if a == C:
-        print(G)
-    if a == G:
-        print(C)
-    if a == 'STOP':
-        break
-print('The proces has been stopped')
-
-
-
-
+#ATAAGGTAAGTCCCCTGAATGCTAATTTCCGATCGTCTCGAGATCTGAGGGCGCGCCCTTAAATAAAAAAA
+a = input('Type tour DNA sequence.:')
+a.upper().strip()
+list1 = list(a)
+list2 = []
+for i in list1:
+    if i == 'A':
+        list2.append('T')
+    if i == 'T':
+        list2.append('A')
+    if i == 'G':
+        list2.append('C')
+    if i == 'C':
+        list2.append('A')
+str1 = ''.join(list2)
+print(f'Opposite strand of DNA: \n\t {str1}')
+print(f'First strand of DNA: \n\t {str1}')
+print(f'Full DNA: \n\t {a.upper().strip()} \n\t {str1}')
