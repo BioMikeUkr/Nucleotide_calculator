@@ -1,7 +1,6 @@
 #ATAAGGTAAGTCCCCTGAATGCTAATTTCCGATCGTCTCGAGATCTGAGGGCGCGCCCTTAAATAAAAAAA
 a = input('Type tour DNA sequence.:')
-a.upper().strip()
-list1 = list(a)
+list1 = list(a.upper().strip())
 list2 = []
 for i in list1:
     if i == 'A':
